@@ -1,19 +1,30 @@
 import React from 'react';
+import './main.css';
+
 import Board from './Components/Board';
 import Card from './Components/Card';
 
 function App() {
   return (
     <div className="App">
-      <main className="fexbox">
+      <main className="flexbox">
         <Board id="board-1" className="board">
           <Card id="card-1" className="card" draggable="true">
-            <p>Oi sou um card</p>
+            <p>Oi sou um car 1</p>
+          </Card>
+          <Card id="card-2" className="card" draggable="true">
+            <p>Oi sou um car 2</p>
+          </Card>
+          <Card id="card-3" className="card" draggable="true">
+            <p>Oi sou um car 3</p>
+          </Card>
+          <Card id="card-4" className="card" draggable="true">
+            <p>Oi sou um car 4</p>
           </Card>
         </Board>
         <Board id="board-2" className="board">
-          <Card id="card-2" className="card" draggable="true">
-            <p>Oi sou um card</p>
+          <Card id="card-5" className="card" draggable="true">
+            <p>Oi sou um card 5</p>
           </Card>
         </Board>
       </main>
