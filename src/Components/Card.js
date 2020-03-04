@@ -1,9 +1,9 @@
 import React from 'react';
-
 const Card = ({ children, id, className, draggable }) => {
+  console.log('uiuiui')
   const dragStart = e => {
     const target = e.target;
-    e.dataDransfer.setDate('card_id', target.id);
+    e.dataTransfer.setData('card_id', target.id);
 
     setTimeout(() => {
       target.style.display = 'none';
@@ -20,7 +20,9 @@ const Card = ({ children, id, className, draggable }) => {
       draggable={draggable}
       onDragStart={dragStart}
       onDragOver={dragOver}
-    ></div>
+    >
+      {children}
+    </div>
   );
 };
 
