@@ -1,4 +1,7 @@
 import React from 'react';
+import Board from './Components/Board';
+import Card from './Components/Board';
+
 
 function App() {
   return (
